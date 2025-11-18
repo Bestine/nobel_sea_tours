@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500;
+  }
+  
+  .ocean-gradient {
+    @apply bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100;
+  }
+  
+  .coral-gradient {
+    @apply bg-gradient-to-r from-orange-400 to-pink-500;
+  }
+}

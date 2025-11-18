@@ -1,8 +1,10 @@
-# CICDforDataEngineering
-This repository is an Infrastructure as Code (IaC) project that leverages terraform for orchestrating the provisioning of the Azure services related to Data Engineering.
+## Nobel Sea Tours
 
-These are the tools required;
-- Terraform
-- Azure
--
-- 
+This app was created using https://getmocha.com.
+Need help or want to join the community? Join our [Discord](https://discord.gg/shDEGBSe2d).
+
+To run the devserver:
+```
+npm install
+npm run dev
+```
