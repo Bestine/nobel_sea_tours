@@ -149,9 +149,9 @@ export default function Experiences() {
         </div>
       </section>
 
-      {/* Experiences Grid */}
-      <section className="py-16 px-4 bg-gradient-to-b from-white to-sand-50">
-        <div className="max-w-7xl mx-auto">
+      {/* Experiences Full Width */}
+      <section className="py-16 bg-gradient-to-b from-white to-sand-50">
+        <div className="max-w-7xl mx-auto px-4">
           {/* Filter Categories */}
           <div className="flex flex-wrap gap-3 justify-center mb-12">
             {categories.map((category) => (
@@ -164,69 +164,75 @@ export default function Experiences() {
             ))}
           </div>
 
-          {/* Experiences */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Experiences - Full Width Cards */}
+          <div className="space-y-8">
             {experiences.map((experience) => (
               <div 
                 key={experience.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
               >
-                <div className="relative h-56 overflow-hidden">
-                  <img 
-                    src={experience.image}
-                    alt={experience.title}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute top-4 right-4 px-3 py-1 bg-ocean-600/90 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
-                    {experience.category}
-                  </div>
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-serif font-bold text-ocean-900 mb-3">
-                    {experience.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                    {experience.description}
-                  </p>
-
-                  <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Clock className="w-4 h-4 mr-2 text-ocean-500" />
-                      {experience.duration}
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <Users className="w-4 h-4 mr-2 text-ocean-500" />
-                      {experience.groupSize}
-                    </div>
-                    <div className="flex items-center text-sm text-gray-600">
-                      <DollarSign className="w-4 h-4 mr-2 text-ocean-500" />
-                      <span className="font-semibold text-ocean-700">{experience.price}</span>
+                <div className="grid md:grid-cols-2 gap-0">
+                  {/* Image Section */}
+                  <div className="relative h-80 md:h-auto overflow-hidden">
+                    <img 
+                      src={experience.image}
+                      alt={experience.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute top-6 right-6 px-4 py-2 bg-ocean-600/90 backdrop-blur-sm text-white text-sm font-semibold rounded-full">
+                      {experience.category}
                     </div>
                   </div>
 
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-4">
-                    <div className="flex items-start">
-                      <Leaf className="w-4 h-4 mr-2 text-green-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-xs text-green-800">{experience.ecoBenefit}</p>
+                  {/* Content Section */}
+                  <div className="p-8 md:p-10 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-3xl font-serif font-bold text-ocean-900 mb-4">
+                        {experience.title}
+                      </h3>
+                      <p className="text-gray-600 text-base mb-6 leading-relaxed">
+                        {experience.description}
+                      </p>
+
+                      <div className="grid grid-cols-2 gap-4 mb-6">
+                        <div className="flex items-center text-sm text-gray-600">
+                          <Clock className="w-5 h-5 mr-3 text-ocean-500" />
+                          <span>{experience.duration}</span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-600">
+                          <Users className="w-5 h-5 mr-3 text-ocean-500" />
+                          <span>{experience.groupSize}</span>
+                        </div>
+                        <div className="flex items-center text-sm text-gray-600 col-span-2">
+                          <DollarSign className="w-5 h-5 mr-3 text-ocean-500" />
+                          <span className="font-semibold text-ocean-700 text-lg">{experience.price}</span>
+                        </div>
+                      </div>
+
+                      <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                        <div className="flex items-start">
+                          <Leaf className="w-5 h-5 mr-3 text-green-600 flex-shrink-0 mt-0.5" />
+                          <p className="text-sm text-green-800">{experience.ecoBenefit}</p>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {experience.suitableFor.map((tag, idx) => (
+                          <span 
+                            key={idx}
+                            className="px-3 py-1.5 bg-sand-100 text-ocean-700 text-sm rounded-full font-medium"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {experience.suitableFor.map((tag, idx) => (
-                      <span 
-                        key={idx}
-                        className="px-2 py-1 bg-sand-100 text-ocean-700 text-xs rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                    <button className="w-full py-4 bg-ocean-500 text-white rounded-lg font-semibold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2 text-lg">
+                      <Calendar className="w-5 h-5" />
+                      <span>Check Availability</span>
+                    </button>
                   </div>
-
-                  <button className="w-full py-3 bg-ocean-500 text-white rounded-lg font-semibold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Book Now</span>
-                  </button>
                 </div>
               </div>
             ))}

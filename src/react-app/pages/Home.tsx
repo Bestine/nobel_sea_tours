@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Anchor, Heart, Leaf, Users, Star, ArrowRight, ShoppingBag } from 'lucide-react';
+import { Anchor, Heart, Leaf, Users, Star, ArrowRight, ShoppingBag, Calendar, Clock, DollarSign } from 'lucide-react';
 
 export default function Home() {
   const features = [
@@ -25,29 +25,16 @@ export default function Home() {
     },
   ];
 
-  const featuredExperiences = [
-    {
-      title: 'Wasini Island Dolphin Experience',
-      image: 'https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=800&h=600&fit=crop',
-      duration: 'Full Day',
-      price: 'From $120',
-      tag: 'Most Popular',
-    },
-    {
-      title: 'Sunset Dhow Cruise',
-      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop',
-      duration: '3 Hours',
-      price: 'From $80',
-      tag: 'Romantic',
-    },
-    {
-      title: 'Mambrui Sand Dunes Adventure',
-      image: 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&h=600&fit=crop',
-      duration: 'Half Day',
-      price: 'From $95',
-      tag: 'Adventure',
-    },
-  ];
+  const featuredExperience = {
+    title: 'Wasini Island Dolphin Experience',
+    category: 'Marine Life',
+    image: 'https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=1600&h=900&fit=crop',
+    description: 'Swim with wild dolphins in their natural habitat, explore vibrant coral reefs, and enjoy a fresh seafood lunch on pristine Wasini Island.',
+    duration: 'Full Day (8 hours)',
+    groupSize: '4-12 people',
+    price: '$120',
+    tag: 'Most Popular',
+  };
 
   const testimonials = [
     {
@@ -117,61 +104,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Experiences */}
+      {/* Featured Experience */}
       <section className="py-20 px-4 bg-gradient-to-b from-white to-ocean-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-ocean-900 mb-4">
-              Featured Experiences
+              Featured Experience
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Curated adventures that celebrate the beauty and culture of our coastal paradise
+              Our most beloved coastal adventure
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {featuredExperiences.map((experience, index) => (
-              <div 
-                key={index}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
-              >
-                <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={experience.image}
-                    alt={experience.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute top-4 right-4 px-3 py-1 bg-coral-500 text-white text-sm font-semibold rounded-full">
-                    {experience.tag}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-serif font-bold text-ocean-900 mb-2">
-                    {experience.title}
-                  </h3>
-                  <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
-                    <span className="flex items-center">
-                      <span className="w-2 h-2 bg-ocean-500 rounded-full mr-2" />
-                      {experience.duration}
-                    </span>
-                    <span className="font-semibold text-ocean-600">{experience.price}</span>
-                  </div>
-                  <button className="w-full py-3 bg-ocean-500 text-white rounded-lg font-semibold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2">
-                    <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500">
+            <div className="grid md:grid-cols-2 gap-0">
+              {/* Image Section */}
+              <div className="relative h-96 md:h-auto overflow-hidden">
+                <img 
+                  src={featuredExperience.image}
+                  alt={featuredExperience.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute top-6 right-6 px-4 py-2 bg-coral-500 text-white text-sm font-bold rounded-full shadow-lg">
+                  {featuredExperience.tag}
                 </div>
               </div>
-            ))}
+
+              {/* Content Section */}
+              <div className="p-10 md:p-12 flex flex-col justify-between">
+                <div>
+                  <div className="inline-block px-3 py-1 bg-ocean-100 text-ocean-700 text-sm font-semibold rounded-full mb-4">
+                    {featuredExperience.category}
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-serif font-bold text-ocean-900 mb-4">
+                    {featuredExperience.title}
+                  </h3>
+                  <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+                    {featuredExperience.description}
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-6 mb-8">
+                    <div className="flex items-center text-base text-gray-600">
+                      <Clock className="w-6 h-6 mr-3 text-ocean-500" />
+                      <span>{featuredExperience.duration}</span>
+                    </div>
+                    <div className="flex items-center text-base text-gray-600">
+                      <Users className="w-6 h-6 mr-3 text-ocean-500" />
+                      <span>{featuredExperience.groupSize}</span>
+                    </div>
+                    <div className="flex items-center text-base text-gray-600 col-span-2">
+                      <DollarSign className="w-6 h-6 mr-3 text-ocean-500" />
+                      <span className="font-bold text-ocean-700 text-2xl">{featuredExperience.price}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button className="w-full py-4 bg-ocean-500 text-white rounded-xl font-bold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2 text-lg shadow-lg hover:shadow-xl">
+                  <Calendar className="w-5 h-5" />
+                  <span>Check Availability</span>
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div className="text-center mt-12">
+          {/* Explore More Link */}
+          <div className="text-center mt-10">
             <Link 
               to="/experiences"
-              className="inline-flex items-center space-x-2 text-ocean-600 font-semibold hover:text-ocean-700 transition-colors"
+              className="inline-flex items-center space-x-2 text-ocean-600 font-semibold text-lg hover:text-ocean-700 transition-colors group"
             >
-              <span>View All Experiences</span>
-              <ArrowRight className="w-5 h-5" />
+              <span>Discover more unforgettable coastal experiences</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
