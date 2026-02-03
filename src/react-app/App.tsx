@@ -9,7 +9,7 @@ import ContactPage from "@/react-app/pages/Contact";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/nobel_sea_tours">
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
