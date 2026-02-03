@@ -7,7 +7,7 @@ import { mochaPlugins } from "@getmocha/vite-plugins";
 export default defineConfig({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   plugins: [...mochaPlugins(process.env as any), react(), cloudflare()],
-  base: "/nobel_sea_tours",
+  base: "/nobel_sea_tours/",
   server: {
     allowedHosts: true,
   },
