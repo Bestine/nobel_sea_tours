@@ -142,8 +142,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-semibold mb-1">Phone</p>
-                      <a href="tel:+254716405236" className="text-ocean-100 hover:text-white transition-colors">
-                        +254 716 405 236
+                      <a href="tel:+254119101566" className="text-ocean-100 hover:text-white transition-colors">
+                        +254 110 101 566
                       </a>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ export default function Contact() {
                     <div>
                       <p className="font-semibold mb-1">Email</p>
                       <a href="mailto:info@nobelseatours.com" className="text-ocean-100 hover:text-white transition-colors">
-                        info@nobelseatours.com
+                        nobelseatours@yahoo.com
                       </a>
                     </div>
                   </div>

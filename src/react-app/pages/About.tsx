@@ -26,28 +26,28 @@ export default function About() {
 
   const team = [
     {
-      name: 'Amina Hassan',
+      name: 'Bestine Okinda',
       role: 'Founder & Marine Biologist',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
       bio: '15 years protecting East African marine ecosystems',
     },
     {
-      name: 'James Mwangi',
+      name: 'Ambra Mjumbe',
       role: 'Head Guide & Conservation Lead',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
       bio: 'Born in Wasini, certified dive master and cultural ambassador',
     },
     {
-      name: 'Fatuma Ali',
-      role: 'Cultural Programs Director',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
-      bio: 'Preserving Swahili heritage through immersive experiences',
-    },
-    {
-      name: 'Omar Said',
+      name: 'Athman Masudi',
       role: 'Sustainability Coordinator',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
       bio: 'Leading our zero-waste and carbon offset initiatives',
+    },
+    {
+      name: 'Salim Bwanamwaka',
+      role: 'Cultural Programs Director',
+      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
+      bio: 'Preserving Swahili heritage through immersive experiences',
     },
   ];
 
@@ -94,7 +94,7 @@ export default function About() {
                 Sustainable Travel, Thriving Oceans, Empowered Communities
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Nobel Sea Tours was born from a simple belief: tourism can be a powerful force for good. Founded by marine biologist Dr. Amina Hassan in 2015, we've grown from a small dhow operation to East Africa's leading sustainable coastal tour company.
+                Nobel Sea Tours was born from a simple belief: tourism can be a powerful force for good. Founded by marine biologist Bestine Okinda in 2019, we've grown from a small dhow operation to East Africa's leading sustainable coastal tour company.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Every journey we create serves three purposes—giving travelers unforgettable experiences, protecting our precious marine ecosystems, and uplifting the coastal communities that call this paradise home.
