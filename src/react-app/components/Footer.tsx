@@ -58,11 +58,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-3 text-ocean-200">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>+254 716 405 236</span>
+                <span>+254 119 101 566</span>
               </li>
               <li className="flex items-start space-x-3 text-ocean-200">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>info@nobelseatours.com</span>
+                <span>nobelseatours@yahoo.com</span>
               </li>
               <li className="flex items-start space-x-3 text-ocean-200">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
