@@ -28,25 +28,25 @@ export default function About() {
     {
       name: 'Bestine Okinda',
       role: 'Founder & Marine Biologist',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
+      image: 'https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/team_profiles/white-BestineOkinda.png?w=400&h=400&fit=crop',
       bio: '15 years protecting East African marine ecosystems',
     },
     {
       name: 'Ambra Mjumbe',
       role: 'Head Guide & Conservation Lead',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
+      image: 'https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/team_profiles/ambra.jpeg?w=400&h=400&fit=crop',
       bio: 'Born in Wasini, certified dive master and cultural ambassador',
     },
     {
       name: 'Athman Masudi',
       role: 'Sustainability Coordinator',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
+      image: 'https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/team_profiles/athman.jpeg?w=400&h=400&fit=crop',
       bio: 'Leading our zero-waste and carbon offset initiatives',
     },
     {
       name: 'Salim Bwanamwaka',
       role: 'Cultural Programs Director',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
+      image: 'https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/team_profiles/salim.jpeg?w=400&h=400&fit=crop',
       bio: 'Preserving Swahili heritage through immersive experiences',
     },
   ];
@@ -112,7 +112,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 relative">
               <img 
-                src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=800&h=600&fit=crop"
+                src="https://images.unsplash.com/photo-1592455639374-b7ad0189dfbb?w=800&h=600&fit=crop"
                 alt="Coastal community"
                 className="rounded-2xl shadow-2xl"
               />
