@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+// import { Link } from 'react-router-dom';
 import { Anchor, Heart, Leaf, Users, Star, ArrowRight, ShoppingBag, Calendar, Clock, DollarSign } from 'lucide-react';
 
 export default function Home() {
@@ -160,10 +161,13 @@ export default function Home() {
                   </div>
                 </div>
 
-                <button className="w-full py-4 bg-ocean-500 text-white rounded-xl font-bold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2 text-lg shadow-lg hover:shadow-xl">
+                <Link
+                  to="/experiences/wasini-dolphin"
+                  className="w-full py-4 bg-ocean-500 text-white rounded-xl font-bold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2 text-lg shadow-lg hover:shadow-xl"
+                >
                   <Calendar className="w-5 h-5" />
                   <span>Check Availability</span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
