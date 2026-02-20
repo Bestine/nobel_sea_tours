@@ -55,7 +55,8 @@ export default function WasiniDolphinTour() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1564419320461-6870880221ad?w=1920&h=600&fit=crop)', // Dolphin/ocean scene; replace if needed
+            // backgroundImage: 'url(https://images.unsplash.com/photo-1564419320461-6870880221ad?w=1920&h=600&fit=crop)', // Dolphin/ocean scene; replace if needed
+            backgroundImage: 'url(https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/experiences/wasini-dolphin-tour/hero-background.jpg?w=1920&h=600&fit=crop)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-ocean-900/80 to-ocean-900/60" />
@@ -92,7 +93,8 @@ export default function WasiniDolphinTour() {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop" // Snorkeling/marine scene
+                // src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop" // Snorkeling/marine scene
+                src="https://images.unsplash.com/photo-1696910874065-31f082d7b4e5?w=800&h=600&fit=crop"
                 alt="Snorkeling in Kisite Marine Park"
                 className="rounded-2xl shadow-2xl"
               />
