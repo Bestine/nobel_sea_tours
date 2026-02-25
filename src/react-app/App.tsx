@@ -6,7 +6,10 @@ import MarketplacePage from "@/react-app/pages/Marketplace";
 import BlogPage from "@/react-app/pages/Blog";
 import AboutPage from "@/react-app/pages/About";
 import ContactPage from "@/react-app/pages/Contact";
+
+// -------- Experiences ----------
 import WasiniDolphinTour from "@/react-app/pages/tours/WasiniDolphinTour";
+import SunsetDhowCruise from "@/react-app/pages/tours/SunsetDhowCruise";
 
 export default function App() {
   return (
@@ -18,6 +21,10 @@ export default function App() {
           <Route 
             path="/experiences/wasini-dolphin" 
             element={<WasiniDolphinTour />} 
+          />
+          <Route 
+          path="/experiences/sunset-dhow-cruise" 
+          element={<SunsetDhowCruise />} 
           />
           <Route path="/marketplace" element={<MarketplacePage />} />
           <Route path="/blog" element={<BlogPage />} />
