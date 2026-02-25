@@ -1,4 +1,5 @@
 import { Calendar, Users, Leaf, Clock, DollarSign } from 'lucide-react';
+import { Link } from 'react-router';
 
 export default function Experiences() {
   const experiences = [
@@ -14,10 +15,11 @@ export default function Experiences() {
       price: '$120',
       ecoBenefit: 'Supports marine conservation & local fishing communities',
       suitableFor: ['Families', 'Couples', 'Adventure Seekers'],
+      slug: 'wasini-dolphin',
     },
     {
       id: 2,
-      title: 'Diani Sunset Dhow Cruise',
+      title: 'Sundowner Dhow Cruise',
       category: 'Romantic',
       image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop',
       description: 'Sail on a traditional dhow as the sun sets over the Indian Ocean. Includes sunset cocktails, fresh tropical fruits, and live coastal music.',
@@ -229,10 +231,23 @@ export default function Experiences() {
                       </div>
                     </div>
 
-                    <button className="w-full py-4 bg-ocean-500 text-white rounded-lg font-semibold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2 text-lg">
-                      <Calendar className="w-5 h-5" />
-                      <span>Check Availability</span>
-                    </button>
+                    {experience.slug ? (
+                      <Link
+                        to={`/experiences/${experience.slug}`}
+                        className="w-full py-4 bg-ocean-500 text-white rounded-lg font-semibold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2 text-lg shadow-md hover:shadow-lg"
+                      >
+                        <Calendar className="w-5 h-5" />
+                        <span>Explore This Tour</span>
+                      </Link>
+                    ) : (
+                      <button
+                        className="w-full py-4 bg-ocean-500/70 text-white rounded-lg font-semibold cursor-not-allowed flex items-center justify-center space-x-2 text-lg opacity-80"
+                        disabled
+                      >
+                        <Calendar className="w-5 h-5" />
+                        <span>Coming Soon</span>
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
