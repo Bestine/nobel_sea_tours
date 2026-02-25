@@ -71,7 +71,7 @@ export default function SunsetDhowCruise() {
           </div>
 
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-2">
-            Diani Sunset Dhow Cruise
+            Sunset Dhow Cruise
           </h1>
 
           <p className="text-xl text-ocean-100 mb-4 max-w-3xl">
@@ -97,7 +97,7 @@ export default function SunsetDhowCruise() {
                 Glide into Golden Hour Magic
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Board a beautifully crafted traditional dhow as the afternoon light softens and the sky begins its transformation. Sail gently along the Diani coast or into serene mangrove channels, watching the sun melt into the Indian Ocean in a blaze of orange, pink, and gold.
+                Board a beautifully crafted traditional dhow as the afternoon light softens and the sky begins its transformation. Sail gently along the Tudor Creek, Mombasa or into serene mangrove channels, watching the sun melt into the Indian Ocean in a blaze of orange, pink, and gold.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Sip a welcome cocktail, savor fresh tropical fruits, and enjoy live acoustic music with Swahili rhythms while the warm sea breeze carries the day away. This romantic, relaxing cruise is ideal for couples, small groups, or anyone seeking a peaceful, authentic coastal moment.
