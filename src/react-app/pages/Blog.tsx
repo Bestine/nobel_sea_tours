@@ -1,4 +1,5 @@
 import { Calendar, User, ArrowRight, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router';
 
 export default function Blog() {
   const featuredPost = {
@@ -7,8 +8,9 @@ export default function Blog() {
     image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=600&fit=crop',
     category: 'Community Impact',
     date: 'Nov 10, 2025',
-    author: 'Dr. Amina Hassan',
+    author: 'Bestine Okinda',
     readTime: '8 min read',
+    slug: 'how-sustainable-tourism-transforming-east-africa',
   };
 
   const posts = [
@@ -136,20 +138,24 @@ export default function Blog() {
             <TrendingUp className="w-5 h-5" />
             <span className="font-semibold text-sm uppercase tracking-wide">Featured Story</span>
           </div>
-          <div className="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow">
+
+          <Link
+            to={`/blog/${featuredPost.slug}`}
+            className="block bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 group"
+          >
             <div className="grid md:grid-cols-2 gap-0">
-              <div className="relative h-64 md:h-auto">
-                <img 
+              <div className="relative h-64 md:h-auto overflow-hidden">
+                <img
                   src={featuredPost.image}
                   alt={featuredPost.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 px-4 py-2 bg-coral-500 text-white text-sm font-semibold rounded-full">
                   {featuredPost.category}
                 </div>
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ocean-900 mb-4">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ocean-900 mb-4 group-hover:text-ocean-700 transition-colors">
                   {featuredPost.title}
                 </h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -166,13 +172,13 @@ export default function Blog() {
                   </div>
                   <span>{featuredPost.readTime}</span>
                 </div>
-                <button className="inline-flex items-center space-x-2 text-ocean-600 font-semibold hover:text-ocean-700 transition-colors group">
+                <div className="inline-flex items-center space-x-2 text-ocean-600 font-semibold group-hover:text-ocean-700 transition-colors">
                   <span>Read Full Story</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Categories Filter */}

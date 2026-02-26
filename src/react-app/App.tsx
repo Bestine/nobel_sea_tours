@@ -11,6 +11,9 @@ import ContactPage from "@/react-app/pages/Contact";
 import WasiniDolphinTour from "@/react-app/pages/tours/WasiniDolphinTour";
 import SunsetDhowCruise from "@/react-app/pages/tours/SunsetDhowCruise";
 
+// -------- Blogs ----------
+import BlogPostSustainableTourism from "@/react-app/pages/blogs/BlogPostSustainableTourism";
+
 export default function App() {
   return (
     <Router basename="/nobel_sea_tours">
@@ -28,6 +31,10 @@ export default function App() {
           />
           <Route path="/marketplace" element={<MarketplacePage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route 
+          path="/blog/how-sustainable-tourism-transforming-east-africa" 
+          element={<BlogPostSustainableTourism />} 
+          />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
