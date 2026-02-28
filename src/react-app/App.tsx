@@ -11,6 +11,9 @@ import ContactPage from "@/react-app/pages/Contact";
 import WasiniDolphinTour from "@/react-app/pages/tours/WasiniDolphinTour";
 import SunsetDhowCruise from "@/react-app/pages/tours/SunsetDhowCruise";
 
+// -------- Booking ----------
+import BookWasini from "@/react-app/pages/tours/booking/BookWasini";
+
 // -------- Blogs ----------
 import BlogPostSustainableTourism from "@/react-app/pages/blogs/BlogPostSustainableTourism";
 
@@ -24,6 +27,10 @@ export default function App() {
           <Route 
             path="/experiences/wasini-dolphin" 
             element={<WasiniDolphinTour />} 
+          />
+          <Route 
+          path="/booking" 
+          element={<BookWasini />} 
           />
           <Route 
           path="/experiences/sunset-dhow-cruise" 

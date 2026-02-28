@@ -1,4 +1,5 @@
 import { Leaf, Heart, Users, Anchor, Shield, Calendar, DollarSign } from 'lucide-react';
+import { Link } from 'react-router';
 
 export default function WasiniDolphinTour() {
   const impactPoints = [
@@ -187,9 +188,12 @@ export default function WasiniDolphinTour() {
             </p>
           </div>
 
-          <button className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105">
+          <Link
+            to="/booking"
+            className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
+          >
             Book Now
-          </button>
+          </Link>
         </div>
       </section>
     </div>
