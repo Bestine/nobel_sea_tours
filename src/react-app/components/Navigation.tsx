@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router';
-import { Menu, X, Waves } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,10 +34,14 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+          
+          {/* Brand: Logo image + "Nobel Sea Tours" text */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-ocean-500 to-cyan-400 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-              <Waves className="w-6 h-6 text-white" />
-            </div>
+            <img
+              src="https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/logos/nobel_sea_logo_1.png"
+              alt="Nobel Sea Tours Logo"
+              className="h-9 md:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+            />
             <span className="text-2xl font-serif font-bold bg-gradient-to-r from-ocean-700 to-ocean-500 bg-clip-text text-transparent">
               Nobel Sea Tours
             </span>
@@ -77,7 +81,7 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation – unchanged */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-6 space-y-4">
