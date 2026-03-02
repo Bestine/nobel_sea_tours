@@ -38,7 +38,7 @@ export default function Navigation() {
           {/* Brand: Logo image + "Nobel Sea Tours" text */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
-              src="https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/logos/nobel_sea_logo_1.png"
+              src="https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/logos/nobel_sea_logo_1.jpg"
               alt="Nobel Sea Tours Logo"
               className="h-9 md:h-11 w-auto object-contain transition-transform group-hover:scale-105"
             />
