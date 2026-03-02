@@ -9,10 +9,16 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-ocean-500 rounded-full flex items-center justify-center">
-                <Waves className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-serif font-bold">Nobel Sea Tours</span>
+                <Link to="/" className="flex items-center space-x-3 group">
+                  <img
+                    src="https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/logos/nobel_sea_logo_1.png"
+                    alt="Nobel Sea Tours Logo"
+                    className="h-9 md:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+                  />
+                  <span className="text-2xl font-serif font-bold bg-gradient-to-r from-ocean-700 to-ocean-500 bg-clip-text text-transparent">
+                    Nobel Sea Tours
+                  </span>
+                </Link>
             </div>
             <p className="text-ocean-200 text-sm leading-relaxed">
               Sustainable eco-tourism experiences along the beautiful East African Coast.
