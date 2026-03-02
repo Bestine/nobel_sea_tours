@@ -32,7 +32,7 @@ export default function Experiences() {
     },
     {
       id: 5,
-      title: 'Floating Restaurant + Fishing Experience',
+      title: 'Floating Restaurant + Fishing(Catch & Cook)',
       category: 'Dining',
       image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=600&fit=crop',
       description: 'Dine on fresh seafood at Mkupe Eco and fish with the locals. Enjoy panoramic ocean views while supporting sustainable fishing.',
@@ -56,6 +56,18 @@ export default function Experiences() {
     },
     {
       id: 4,
+      title: 'Kilifi Bioluminescent Night Kayaking',
+      category: 'Adventure',
+      image: 'https://images.unsplash.com/photo-1676196919529-0b228b171e28?w=800&h=600&fit=crop',
+      description: 'Glide across the calm waters of Kilifi under a starlit sky in a transparent kayak, watching the ocean glow beneath you as bioluminescent algae light up with every paddle stroke — a surreal nocturnal adventure blending science, serenity, and pure magic.',
+      duration: '2–3 Hours (Evening/Night)',
+      groupSize: '4–10 people',
+      price: '$120',
+      ecoBenefit: 'Low-impact, non-motorized experience promoting marine conservation awareness and responsible night tourism.',
+      suitableFor: ['Couples', 'Adventure Seekers', 'Nature Lovers', 'Photographers'],
+    },
+    {
+      id: 5,
       title: 'Chale Island Eco-Triathlon Retreat',
       category: 'Adventure',
       image: 'https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=800&h=600&fit=crop',
