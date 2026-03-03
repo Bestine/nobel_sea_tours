@@ -1,4 +1,5 @@
 import { Anchor, Heart, Users, Sunset, Shield, Calendar, DollarSign } from 'lucide-react';
+import { Link } from 'react-router';
 
 export default function SunsetDhowCruise() {
   const impactPoints = [
@@ -78,9 +79,12 @@ export default function SunsetDhowCruise() {
             Sail into the golden hour on a traditional dhow with cocktails, tropical fruits, and live coastal melodies
           </p>
 
-          <button className="px-10 py-5 bg-gradient-to-r from-ocean-500 to-cyan-600 text-white rounded-full font-bold text-xl hover:shadow-2xl hover:shadow-ocean-600/40 transform hover:scale-105 transition-all duration-300 shadow-lg">
+          <Link
+            to="/booking/sunset-dhow-cruise"
+            className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
+          >
             Book Your Sunset Sail
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -196,9 +200,12 @@ export default function SunsetDhowCruise() {
             Secure your place on this timeless sunset journey along the Kenyan coast
           </p>
 
-          <button className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105">
-            Book Now
-          </button>
+          <Link
+            to="/booking/sunset-dhow-cruise"
+            className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
+          >
+            Book Your Sunset Sail
+          </Link>
         </div>
       </section>
     </div>

@@ -79,7 +79,7 @@ export default function WasiniDolphinTour() {
             Ethical dolphin encounters, vibrant snorkeling, and authentic Swahili island culture
           </p>
           <Link
-            to="/booking"
+            to="/booking/wasini-dolphin"
             className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
           >
             Book Your Dolphin Watch
@@ -203,7 +203,7 @@ export default function WasiniDolphinTour() {
           </div>
 
           <Link
-            to="/booking"
+            to="/booking/wasini-dolphin"
             className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
           >
             Book Now
