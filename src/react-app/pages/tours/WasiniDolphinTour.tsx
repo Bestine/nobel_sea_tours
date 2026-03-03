@@ -46,7 +46,7 @@ export default function WasiniDolphinTour() {
 
   const isAvailable = true; // Change to false when needed
   const availabilityText = isAvailable 
-    ? "Currently Available – Book your spot today!"
+    ? "Currently Available – Book your Wasini spot today!"
     : "Temporarily Not Available – Check back soon or contact us";
 
   return (
@@ -64,12 +64,26 @@ export default function WasiniDolphinTour() {
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+          {/* Availability badge + strong CTA */}
+          <div className={`inline-flex items-center px-6 py-3 rounded-full text-lg font-semibold mb-6 ${
+              isAvailable ? 'bg-green-500/20 text-green-300 border border-green-400/30' : 'bg-red-500/20 text-red-300 border border-red-400/30'
+            }`}>
+              <Calendar className="w-5 h-5 mr-2" />
+              {availabilityText}
+          </div>
+          {/* Title + strong CTA */}
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4">
             Wasini Island Swim with Dolphins Experience
           </h1>
           <p className="text-xl text-ocean-100">
             Ethical dolphin encounters, vibrant snorkeling, and authentic Swahili island culture
           </p>
+          <Link
+            to="/booking"
+            className="px-12 py-6 bg-ocean-500 text-white rounded-full font-semibold text-xl hover:bg-ocean-600 transition-colors shadow-xl hover:shadow-2xl transform hover:scale-105 inline-block"
+          >
+            Book Your Dolphin Watch
+          </Link>
         </div>
       </section>
 
@@ -181,7 +195,7 @@ export default function WasiniDolphinTour() {
               {availabilityText}
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Ready for Your Adventure?
+              Ready for Your Wasini Adventure?
             </h2>
             <p className="text-lg text-ocean-100 mb-8">
               Secure your spot on this unforgettable dolphin and snorkeling experience

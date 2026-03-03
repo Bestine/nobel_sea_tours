@@ -183,6 +183,12 @@ export default function SunsetDhowCruise() {
       {/* Availability & Book Now */}
       <section className="py-20 px-4 bg-gradient-to-br from-ocean-900 to-cyan-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
+          <div className={`inline-flex items-center px-6 py-3 rounded-full text-lg font-semibold mb-6 ${
+              isAvailable ? 'bg-green-500/20 text-green-300 border border-green-400/30' : 'bg-red-500/20 text-red-300 border border-red-400/30'
+            }`}>
+              <Calendar className="w-5 h-5 mr-2" />
+              {availabilityText}
+            </div>
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
             Ready for Golden Hour?
           </h2>
