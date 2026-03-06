@@ -27,15 +27,27 @@ export default function Home() {
   ];
 
   const featuredExperience = {
-    title: 'Wasini Island Dolphin Experience',
-    category: 'Marine Life',
-    // image: 'https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=1600&h=900&fit=crop',
-    image: 'https://images.unsplash.com/photo-1703319955946-c7816e75b2e5?w=1600&h=900&fit=crop',
-    description: 'Swim with wild dolphins in their natural habitat, explore vibrant coral reefs, and enjoy a fresh seafood lunch on pristine Wasini Island.',
-    duration: 'Full Day (8 hours)',
-    groupSize: '4-12 people',
-    price: '$120',
-    tag: 'Most Popular',
+    // title: 'Wasini Island Dolphin Experience',
+    // category: 'Marine Life',
+    // // image: 'https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=1600&h=900&fit=crop',
+    // image: 'https://images.unsplash.com/photo-1703319955946-c7816e75b2e5?w=1600&h=900&fit=crop',
+    // description: 'Swim with wild dolphins in their natural habitat, explore vibrant coral reefs, and enjoy a fresh seafood lunch on pristine Wasini Island.',
+    // duration: 'Full Day (8 hours)',
+    // groupSize: '4-12 people',
+    // price: '$120',
+    // tag: 'Most Popular',
+
+    title: 'Sundowner Dhow Cruise',
+    category: 'Calming',
+    image: 'https://raw.githubusercontent.com/Bestine/nobel_sea_tours/refs/heads/main/public/assets/images/experiences/sunset-dhow-cruise/hero-background.jpg?w=1920&h=600&fit=crop',
+    description: 'Sail on a traditional dhow as the sun sets over the Indian Ocean. Includes sunset cocktails, fresh tropical fruits, and live coastal theme.',
+    duration: '3 hours',
+    groupSize: '2-20 people',
+    price: '$80',
+    ecoBenefit: 'Wind-powered sailing, zero emissions journey',
+    suitableFor: ['Couples', 'Groups', 'Celebrations'],
+    slug: 'sunset-dhow-cruise',
+    tag: 'Eid holidays'
   };
 
   const testimonials = [
