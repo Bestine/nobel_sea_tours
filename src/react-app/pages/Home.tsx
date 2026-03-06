@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
 
                 <Link
-                  to="/experiences/wasini-dolphin"
+                  to="/experiences/sunset-dhow-cruise"
                   className="w-full py-4 bg-ocean-500 text-white rounded-xl font-bold hover:bg-ocean-600 transition-colors flex items-center justify-center space-x-2 text-lg shadow-lg hover:shadow-xl"
                 >
                   <Calendar className="w-5 h-5" />
