@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, MessageSquare, Send } from 'lucide-react';
 
 export default function Contact() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/254XXXXXXXXX', '_blank');
+    window.open('https://wa.me/254119101566', '_blank');
   };
 
   return (
@@ -12,7 +12,7 @@ export default function Contact() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&h=600&fit=crop)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1616446787875-83e1559ef554?w=1920&h=600&fit=crop)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-ocean-900/80 to-ocean-900/60" />

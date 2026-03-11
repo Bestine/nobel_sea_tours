@@ -65,10 +65,10 @@ export default function Retreats() {
     },
     {
       id: 6,
-      title: 'Chale Island Eco-Triathlon Retreat',
+      title: 'Chale Island Triathlon',
       category: 'Wellness & Adventure',
-      image: 'https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=800&h=600&fit=crop',
-      description: 'A transformative 2-day retreat combining swimming, kayaking, beach yoga, and mindfulness sessions on pristine Chale Island.',
+      image: 'https://images.unsplash.com/photo-1716843975519-8466c7babc7f?w=800&h=600&fit=crop',
+      description: 'A transformative 2-day retreat combining cycling,swimming, kayaking, beach yoga, and mindfulness sessions on pristine Chale Island.',
       duration: '2 Days / 1 Night',
       groupSize: '8–20 people',
       price: '$280',
@@ -83,6 +83,7 @@ export default function Retreats() {
     'Corporate & Team',
     'Rest & Recovery',
     'Eco-Luxury',
+    'Education'
   ];
 
   return (
@@ -204,7 +205,7 @@ export default function Retreats() {
               Reserve your space in one of our transformative coastal retreats and return home renewed.
             </p>
             <Link
-              to="/booking"
+              to="/contact"
               className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-ocean-500 to-cyan-600 text-white rounded-full font-bold text-xl hover:shadow-2xl hover:shadow-ocean-600/40 transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
               Start Your Retreat Journey
