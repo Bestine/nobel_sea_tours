@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Layout from "@/react-app/components/Layout";
 import HomePage from "@/react-app/pages/Home";
 import ExperiencesPage from "@/react-app/pages/Experiences";
+import RetreatsPage from "@/react-app/pages/Retreats";
 import MarketplacePage from "@/react-app/pages/Marketplace";
 import BlogPage from "@/react-app/pages/Blog";
 import AboutPage from "@/react-app/pages/About";
@@ -12,7 +13,7 @@ import WasiniDolphinTour from "@/react-app/pages/tours/WasiniDolphinTour";
 import SunsetDhowCruise from "@/react-app/pages/tours/SunsetDhowCruise";
 
 // -------- Booking ----------
-import BookWasini from "@/react-app/pages/tours/booking/BookWasini";
+// import BookWasini from "@/react-app/pages/tours/booking/BookWasini";
 import Booking from "@/react-app/pages/tours/booking/Booking";
 
 // -------- Blogs ----------
@@ -37,6 +38,7 @@ export default function App() {
           path="/experiences/sunset-dhow-cruise" 
           element={<SunsetDhowCruise />} 
           />
+          <Route path="/retreats" element={<RetreatsPage />} />
           <Route path="/marketplace" element={<MarketplacePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route 

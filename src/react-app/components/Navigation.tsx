@@ -18,6 +18,7 @@ export default function Navigation() {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/experiences', label: 'Experiences' },
+    { path: '/retreats', label: 'Retreats' },
     { path: '/marketplace', label: 'Marketplace' },
     { path: '/blog', label: 'Blog' },
     { path: '/about', label: 'About' },
