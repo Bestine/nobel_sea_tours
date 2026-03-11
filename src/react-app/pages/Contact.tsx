@@ -83,7 +83,7 @@ export default function Contact() {
                   <input
                     type="tel"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-ocean-500 focus:border-transparent transition-all"
-                    placeholder="+254 XXX XXX XXX"
+                    placeholder="+254 119 101 566"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ export default function Contact() {
                     <div>
                       <p className="font-semibold mb-1">Phone</p>
                       <a href="tel:+254119101566" className="text-ocean-100 hover:text-white transition-colors">
-                        +254 110 101 566
+                        +254 119 101 566
                       </a>
                     </div>
                   </div>
