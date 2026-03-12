@@ -1,4 +1,4 @@
-import { Calendar, Users, Leaf, Clock, DollarSign } from 'lucide-react';
+import { Calendar, Users, Leaf, Clock } from 'lucide-react';
 import { Link } from 'react-router';
 
 export default function Experiences() {
@@ -7,12 +7,12 @@ export default function Experiences() {
       id: 1,
       title: 'Wasini Island Dolphin Experience',
       category: 'Marine Life',
-      // image: 'https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=800&h=600&fit=crop',
       image: 'https://images.unsplash.com/photo-1703319955946-c7816e75b2e5?w=800&h=600&fit=crop',
       description: 'Swim with wild dolphins in their natural habitat, explore vibrant coral reefs, and enjoy a fresh seafood lunch on pristine Wasini Island.',
       duration: 'Full Day (8 hours)',
       groupSize: '4-12 people',
-      price: '$120',
+      residentPrice: 'KES 4000',
+      nonResidentPrice: 'USD 65',
       ecoBenefit: 'Supports marine conservation & local fishing communities',
       suitableFor: ['Families', 'Couples', 'Adventure Seekers'],
       slug: 'wasini-dolphin',
@@ -25,22 +25,25 @@ export default function Experiences() {
       description: 'Sail on a traditional dhow as the sun sets over the Indian Ocean. Includes sunset cocktails, fresh tropical fruits, and live coastal theme.',
       duration: '3 hours',
       groupSize: '2-20 people',
-      price: '$80',
+      residentPrice: 'KES 2000',
+      nonResidentPrice: 'USD 35',
       ecoBenefit: 'Wind-powered sailing, zero emissions journey',
       suitableFor: ['Couples', 'Groups', 'Celebrations'],
       slug: 'sunset-dhow-cruise',
     },
     {
       id: 5,
-      title: 'Floating Restaurant + Fishing(Catch & Cook)',
+      title: 'Floating Restaurant + Fishing (Catch & Cook)',
       category: 'Dining',
       image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=600&fit=crop',
       description: 'Dine on fresh seafood at Mkupe Eco and fish with the locals. Enjoy panoramic ocean views while supporting sustainable fishing.',
       duration: '3 hours',
       groupSize: '2-30 people',
-      price: '$65',
+      residentPrice: 'KES 3000',
+      nonResidentPrice: 'USD 50',
       ecoBenefit: 'Sustainable seafood sourcing, zero-waste dining',
       suitableFor: ['Families', 'Couples', 'Groups'],
+      // no slug → will show "Coming Soon"
     },
     {
       id: 3,
@@ -50,9 +53,11 @@ export default function Experiences() {
       description: 'Explore majestic golden sand dunes, visit historic ruins, and savor authentic Swahili dishes prepared by local chefs.',
       duration: 'Half Day (4 hours)',
       groupSize: '6-15 people',
-      price: '$95',
+      residentPrice: 'KES 3500',
+      nonResidentPrice: 'USD 60',
       ecoBenefit: 'Direct support to local food producers & cultural preservation',
       suitableFor: ['Families', 'Cultural Explorers', 'Photographers'],
+      // slug: 'mambrui-sand-dunes-cuisine',
     },
     {
       id: 4,
@@ -62,9 +67,11 @@ export default function Experiences() {
       description: 'Glide across the calm waters of Kilifi under a starlit sky in a transparent kayak, watching the ocean glow beneath you as bioluminescent algae light up with every paddle stroke — a surreal nocturnal adventure blending science, serenity, and pure magic.',
       duration: '2–3 Hours (Evening/Night)',
       groupSize: '4–10 people',
-      price: '$120',
+      residentPrice: 'KES 3200',
+      nonResidentPrice: 'USD 45',
       ecoBenefit: 'Low-impact, non-motorized experience promoting marine conservation awareness and responsible night tourism.',
       suitableFor: ['Couples', 'Adventure Seekers', 'Nature Lovers', 'Photographers'],
+      // slug: 'kilifi-bioluminescent-kayaking',
     },
   ];
 
@@ -72,7 +79,7 @@ export default function Experiences() {
 
   return (
     <div className="min-h-screen pt-20">
-      {/* Hero */}
+      {/* Hero – unchanged */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -108,30 +115,30 @@ export default function Experiences() {
             ))}
           </div>
 
-          {/* Experiences - Full Width Cards */}
+          {/* Experiences Cards */}
           <div className="space-y-8">
             {experiences.map((experience) => (
               <div 
                 key={experience.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
               >
                 <div className="grid md:grid-cols-2 gap-0">
-                  {/* Image Section */}
+                  {/* Image */}
                   <div className="relative h-80 md:h-auto overflow-hidden">
                     <img 
                       src={experience.image}
                       alt={experience.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute top-6 right-6 px-4 py-2 bg-ocean-600/90 backdrop-blur-sm text-white text-sm font-semibold rounded-full">
                       {experience.category}
                     </div>
                   </div>
 
-                  {/* Content Section */}
+                  {/* Content */}
                   <div className="p-8 md:p-10 flex flex-col justify-between">
                     <div>
-                      <h3 className="text-3xl font-serif font-bold text-ocean-900 mb-4">
+                      <h3 className="text-3xl font-serif font-bold text-ocean-900 mb-4 group-hover:text-ocean-600 transition-colors">
                         {experience.title}
                       </h3>
                       <p className="text-gray-600 text-base mb-6 leading-relaxed">
@@ -147,9 +154,17 @@ export default function Experiences() {
                           <Users className="w-5 h-5 mr-3 text-ocean-500" />
                           <span>{experience.groupSize}</span>
                         </div>
-                        <div className="flex items-center text-sm text-gray-600 col-span-2">
-                          <DollarSign className="w-5 h-5 mr-3 text-ocean-500" />
-                          <span className="font-semibold text-ocean-700 text-lg">{experience.price}</span>
+                        <div className="col-span-2 flex flex-col gap-1">
+                          <div className="flex items-center text-sm text-gray-600">
+                            <span className="font-semibold text-ocean-700 text-sm">
+                              🇰🇪 Residents: {experience.residentPrice} 
+                            </span>
+                          </div>
+                          <div className="flex items-center text-sm text-gray-600">
+                            <span className="font-semibold text-ocean-700 text-sm">
+                              Non-Residents: {experience.nonResidentPrice}
+                            </span>
+                          </div>
                         </div>
                       </div>
 
@@ -172,6 +187,7 @@ export default function Experiences() {
                       </div>
                     </div>
 
+                    {/* Conditional button: detail page if slug exists, otherwise Coming Soon */}
                     {experience.slug ? (
                       <Link
                         to={`/experiences/${experience.slug}`}
@@ -197,7 +213,7 @@ export default function Experiences() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section – unchanged */}
       <section className="py-16 px-4 bg-gradient-to-r from-ocean-600 to-cyan-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
