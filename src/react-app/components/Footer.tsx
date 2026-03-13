@@ -24,14 +24,37 @@ export default function Footer() {
               Sustainable eco-tourism experiences along the beautiful East African Coast.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-9 h-9 rounded-full bg-ocean-700/50 hover:bg-ocean-600 flex items-center justify-center transition-colors">
-                <Facebook className="w-4 h-4" />
+              {/* Facebook */}
+              <a 
+                href="https://www.facebook.com/profile.php?id=61582212926285" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-ocean-700/50 hover:bg-ocean-600 flex items-center justify-center transition-colors hover:scale-110 hover:shadow-md"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="w-4 h-4 text-white" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-ocean-700/50 hover:bg-ocean-600 flex items-center justify-center transition-colors">
-                <Instagram className="w-4 h-4" />
+
+              {/* Instagram */}
+              <a 
+                href="https://www.instagram.com/nobel_sea_tours" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-ocean-700/50 hover:bg-ocean-600 flex items-center justify-center transition-colors hover:scale-110 hover:shadow-md"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-4 h-4 text-white" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-ocean-700/50 hover:bg-ocean-600 flex items-center justify-center transition-colors">
-                <Twitter className="w-4 h-4" />
+
+              {/* X (Twitter) */}
+              <a 
+                href="https://x.com/nobel_sea_tours" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-ocean-700/50 hover:bg-ocean-600 flex items-center justify-center transition-colors hover:scale-110 hover:shadow-md"
+                aria-label="Follow us on X (Twitter)"
+              >
+                <Twitter className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>
