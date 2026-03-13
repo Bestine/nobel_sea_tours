@@ -43,7 +43,8 @@ export default function Home() {
     description: 'Sail on a traditional dhow as the sun sets over the Indian Ocean. Includes sunset cocktails, fresh tropical fruits, and live coastal theme.',
     duration: '3 hours',
     groupSize: '2-20 people',
-    price: '$80',
+    residentPrice: 'KES 2000',
+    nonResidentPrice: '$80',
     ecoBenefit: 'Wind-powered sailing, zero emissions journey',
     suitableFor: ['Couples', 'Groups', 'Celebrations'],
     slug: 'sunset-dhow-cruise',
@@ -167,9 +168,17 @@ export default function Home() {
                       <Users className="w-6 h-6 mr-3 text-ocean-500" />
                       <span>{featuredExperience.groupSize}</span>
                     </div>
-                    <div className="flex items-center text-base text-gray-600 col-span-2">
-                      <DollarSign className="w-6 h-6 mr-3 text-ocean-500" />
-                      <span className="font-bold text-ocean-700 text-2xl">{featuredExperience.price}</span>
+                    <div className="col-span-2 flex flex-col gap-1">
+                      <div className="flex items-center text-sm text-gray-600">
+                        <span className="font-semibold text-ocean-700 text-sm">
+                          🇰🇪 Residents: {featuredExperience.residentPrice} 
+                        </span>
+                      </div>
+                      <div className="flex items-center text-sm text-gray-600">
+                        <span className="font-semibold text-ocean-700 text-sm">
+                          Non-Residents: {featuredExperience.nonResidentPrice}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
