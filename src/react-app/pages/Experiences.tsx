@@ -222,9 +222,11 @@ export default function Experiences() {
           <p className="text-lg text-ocean-100 mb-8">
             We specialize in custom experiences. Let us craft the perfect coastal adventure for you.
           </p>
-          <button className="px-8 py-4 bg-white text-ocean-600 rounded-full font-semibold hover:shadow-2xl transition-all transform hover:scale-105">
+          <Link
+           to="/contact"
+           className="px-8 py-4 bg-white text-ocean-600 rounded-full font-semibold hover:shadow-2xl transition-all transform hover:scale-105">
             Request Custom Experience
-          </button>
+          </Link>
         </div>
       </section>
     </div>
