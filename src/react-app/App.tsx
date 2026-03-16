@@ -19,6 +19,9 @@ import Booking from "@/react-app/pages/tours/booking/Booking";
 // -------- Blogs ----------
 import BlogPostSustainableTourism from "@/react-app/pages/blogs/BlogPostSustainableTourism";
 
+// -------- FAQ ----------
+import FAQ from "@/react-app/pages/FAQ";
+
 export default function App() {
   return (
     <Router basename="/nobel_sea_tours">
@@ -47,6 +50,7 @@ export default function App() {
           />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
       </Layout>
     </Router>

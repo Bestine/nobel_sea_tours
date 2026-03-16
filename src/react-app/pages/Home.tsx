@@ -44,7 +44,7 @@ export default function Home() {
     duration: '3 hours',
     groupSize: '2-20 people',
     residentPrice: 'KES 2000',
-    nonResidentPrice: '$80',
+    nonResidentPrice: '$35',
     ecoBenefit: 'Wind-powered sailing, zero emissions journey',
     suitableFor: ['Couples', 'Groups', 'Celebrations'],
     slug: 'sunset-dhow-cruise',

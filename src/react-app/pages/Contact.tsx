@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, MessageSquare, Send } from 'lucide-react';
+import { Link } from 'react-router';
 
 export default function Contact() {
   const handleWhatsApp = () => {
@@ -239,9 +240,11 @@ export default function Contact() {
           <p className="text-gray-600 mb-8">
             Looking for quick answers? Check out our FAQ section for common questions about bookings, experiences, and sustainability practices.
           </p>
-          <button className="px-8 py-3 bg-ocean-500 text-white rounded-full font-semibold hover:bg-ocean-600 transition-colors">
+          <Link 
+          to="/faq"
+          className="px-8 py-3 bg-ocean-500 text-white rounded-full font-semibold hover:bg-ocean-600 transition-colors">
             View FAQ
-          </button>
+          </Link>
         </div>
       </section>
     </div>
