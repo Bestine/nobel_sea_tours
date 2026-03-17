@@ -5,7 +5,15 @@ import {
   ShieldCheck, 
   CreditCard, 
   CalendarX, 
-  MessageCircleQuestion 
+  MessageCircleQuestion, 
+  Star,
+  WavesLadder,
+  Backpack,
+  Users,
+  Shell, 
+  MapPinPlus, 
+  Bus,
+  Gem
 } from 'lucide-react';
 
 export default function FAQ() {
@@ -35,42 +43,42 @@ export default function FAQ() {
     {
         question: "Are there any special benefits for guests who book with Nobel Sea Tours?",
         answer: "Yes. Guests who travel with us become part of the Nobel Sea community. Returning guests may receive early access to new experiences, priority booking during peak seasons, and occasional invitations to unique coastal events.",
-        icon: CalendarX
+        icon: Star
     },
     {
         question: "Do I need prior experience for activities like kayaking or snorkeling?",
         answer: "Not at all. Many of our experiences are designed for beginners. Our guides provide simple instructions and support so that anyone can comfortably enjoy the activity.",
-        icon: CalendarX
+        icon: WavesLadder
     },
     {
         question: "What should I bring for a coastal experience?",
         answer: "We recommend comfortable clothing, sunscreen, a hat, reusable water bottle, and a camera. For marine activities, bringing a light towel and sandals is also helpful.",
-        icon: CalendarX
+        icon: Backpack
     },
     {
         question: "Are your experiences suitable for families or children?",
         answer: "Many of our experiences are family-friendly. Some activities have minimum age recommendations for safety, but we will always guide you toward the best options for your group.",
-        icon: CalendarX
+        icon: Users
     },
     {
         question: "How do your experiences support local communities?",
-        answer: "Are there any special benefits for guests who book with Nobel Sea Tours?",
-        icon: CalendarX
+        answer: "We collaborate with local boat operators, chefs, guides, and artisans from coastal communities. When you join a Nobel Sea experience, you directly contribute to supporting local livelihoods and preserving Swahili coastal traditions.",
+        icon: Gem
     },
     {
         question: "Can you organize a private or a customized experience?",
         answer: "Yes. We can curate private experiences for couples, families, corporate groups, or special occasions. Simply reach out and we will help design something memorable along the East African coast.",
-        icon: CalendarX
+        icon: Shell
     },
     {
         question: "Where do most experience start?",
-        answer: "Are there any special benefits for guests who book with Nobel Sea Tours?",
-        icon: CalendarX
+        answer: "Many of our experiences start along the Kenyan Coast such as Mombasa, Kilifi, Diani, Malindi or nearby towns. Exact meeting points are shared after booking",
+        icon: MapPinPlus
     },
     {
         question: "Is transportation included?",
         answer: "Some experiences include transport while others require guests to meet at the starting location. Details are always provided clearly during booking.",
-        icon: CalendarX
+        icon: Bus
     },
   ];
 
