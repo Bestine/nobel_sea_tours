@@ -7,6 +7,7 @@ import MarketplacePage from "@/react-app/pages/Marketplace";
 import BlogPage from "@/react-app/pages/Blog";
 import AboutPage from "@/react-app/pages/About";
 import ContactPage from "@/react-app/pages/Contact";
+import ArtsGallery from "@/react-app/pages/ArtsGallery"
 
 // -------- Experiences ----------
 import WasiniDolphinTour from "@/react-app/pages/tours/WasiniDolphinTour";
@@ -50,6 +51,7 @@ export default function App() {
           />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          ArtsGallery<Route path="/artsgallery" element={<ArtsGallery />} />
           <Route path="/faq" element={<FAQ />} />
         </Routes>
       </Layout>

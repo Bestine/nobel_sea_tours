@@ -19,6 +19,7 @@ export default function Navigation() {
     { path: '/', label: 'Home' },
     { path: '/experiences', label: 'Experiences' },
     { path: '/retreats', label: 'Retreats' },
+    { path: '/artsgallery', label: 'Moments & Arts' },
     { path: '/marketplace', label: 'Marketplace' },
     { path: '/blog', label: 'Blog' },
     { path: '/about', label: 'About' },
